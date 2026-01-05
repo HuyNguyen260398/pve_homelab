@@ -40,6 +40,11 @@ Want to get started right away? Follow our [Quick Start Guide](docs/QUICKSTART.m
 ### Configuration
 - **[Network Examples](docs/NETWORK_EXAMPLES.md)** - Common network configurations and examples
 - **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Common issues and solutions
+- **[Command Reference](docs/COMMAND_REFERENCE.md)** - Quick reference for common commands
+
+### Examples
+- **[VM Examples](examples/VM_EXAMPLES.md)** - Virtual machine configuration examples
+- **[LXC Examples](examples/LXC_EXAMPLES.md)** - Container configuration examples
 
 ## Features
 
