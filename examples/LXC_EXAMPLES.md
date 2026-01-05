@@ -39,8 +39,9 @@ pveam update
 # List available templates
 pveam available
 
-# Download Ubuntu 22.04 template
-pveam download local ubuntu-22.04-standard_22.04-1_amd64.tar.zst
+# Download Ubuntu 22.04 template (check 'pveam available' for latest version)
+# Example: pveam download local ubuntu-22.04-standard_22.04-1_amd64.tar.zst
+pveam download local ubuntu-22.04-standard_*_amd64.tar.zst
 ```
 
 ### Create Container

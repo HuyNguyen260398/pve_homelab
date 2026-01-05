@@ -196,7 +196,7 @@ qm importdisk 104 haos.qcow2 local-lvm
 # Backup specific VM
 vzdump 100 --storage local --mode snapshot --compress zstd
 
-# Backup all VMs
+# Backup all VMs (1 = VMs only, use --all for both VMs and containers)
 vzdump --all 1 --storage local --mode snapshot
 ```
 

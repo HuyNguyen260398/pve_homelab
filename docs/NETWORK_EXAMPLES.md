@@ -387,9 +387,20 @@ nslookup google.com    # DNS
 
 ### Allow Traffic Between Networks
 ```bash
-# Enable forwarding between bridges
-iptables -A FORWARD -i vmbr0 -o vmbr1 -j ACCEPT
-iptables -A FORWARD -i vmbr1 -o vmbr0 -j ACCEPT
+# WARNING: These rules allow ALL traffic between networks
+# For production use, restrict to specific ports and protocols
+
+# Example: Allow specific services only
+# Allow HTTP/HTTPS from vmbr0 to vmbr1
+iptables -A FORWARD -i vmbr0 -o vmbr1 -p tcp --dport 80 -j ACCEPT
+iptables -A FORWARD -i vmbr0 -o vmbr1 -p tcp --dport 443 -j ACCEPT
+
+# Allow established connections back
+iptables -A FORWARD -i vmbr1 -o vmbr0 -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Or, allow all traffic (use with caution in homelab only)
+# iptables -A FORWARD -i vmbr0 -o vmbr1 -j ACCEPT
+# iptables -A FORWARD -i vmbr1 -o vmbr0 -j ACCEPT
 
 # Save rules
 iptables-save > /etc/iptables/rules.v4
