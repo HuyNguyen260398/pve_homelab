@@ -1,0 +1,120 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Secrets and sensitive data
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
+*.secret
+secrets/
+secrets.yaml
+secrets.yml
+*.env
+.env
+.env.*
+credentials/
+*.credentials
+
+# Terraform files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible files
+*.retry
+.vault_pass
+.vault_password
+ansible.log
+hosts.ini
+inventory.ini
+
+# Backup files
+*.backup
+*.bak
+backup/
+backups/
+*.old
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv
+
+# Node modules (if using any Node.js tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Documentation builds
+_build/
+site/
+
+# Local development and testing
+.vagrant/
+*.box
+.kitchen/
+.kitchen.local.yml
+
+# ISO images and large binaries
+*.iso
+*.img
+*.qcow2
+*.vmdk
+*.vdi
+
+# Proxmox specific
+*.conf.backup
+pve-cluster.log
+
+# Custom local configurations
+local.yaml
+local.yml
+local.conf
+config.local.*
