@@ -1,0 +1,8 @@
+Config static IP address after installation
+
+If the web UI could not accessed from client, check the IP address of the server
+
+https://www.reddit.com/r/Proxmox/comments/1adj2w2/cant_access_web_gui/
+
+https://www.servethehome.com/how-to-change-primary-proxmox-ve-ip-address/
+
