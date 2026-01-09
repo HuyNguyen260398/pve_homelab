@@ -15,3 +15,5 @@ enable iommu (input output memory management unit)
     update-grub
 
     dmesg | grep -e DMAR -e IOMMU
+
+    dmesg | grep 'remapping'
