@@ -30,6 +30,14 @@ This template is used to track issues, configurations, and solutions for the Pro
 
 ## ⚙️ Configuration Summary
 
+### �️ Configurations & Installations
+| Component 🔧 | Type 📦 | Description 📝 | Version/Details 📋 | Status 🚦 | Date Installed 📅 | Notes 💡 |
+|------------|-------|-------------|-----------------|--------|----------|--------|
+| LXC | Container | Install Ubuntu 22.04 LXC | 22.04 | Done | 2026-01-18 | https://www.youtube.com/watch?v=KMNS_JoHFhg&list=WL&index=25&t=1168s |
+| VM | Virtual Machine | Insetall Ubuntu 25.10 Desktop | 25.10 | Done | 2026-01-18 | https://www.youtube.com/watch?v=KMNS_JoHFhg&list=WL&index=25&t=1877s |
+| VM | QMEU | Enable QMEU Guest Agent | - | Done | 2026-01-18 | ```sudo apt install qemu-guest-agent``` |
+| VM | GPU Passthrough | Passthrough NVIDIA GPU | RTX 5060 Ti 16GB | Not done | 2026-01-18 | https://www.youtube.com/watch?v=KMNS_JoHFhg&list=WL&index=25&t=2101s <br> https://pve.proxmox.com/wiki/PCI_Passthrough |
+
 ### 📦 VM/Container Inventory
 - VM/CT ID | Name | OS | Purpose | IP Address | Status
 
